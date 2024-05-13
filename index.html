@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FashionAja Store</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <style>
+      .current-time-section {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">FashionAja</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <!-- Current Time -->
+          <div class="d-flex align-items-center ms-3">
+            <p class="text-light mb-0 me-2">Current Time:</p>
+            <p id="current-time" class="text-light mb-0"></p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Current Time -->
+    <section class="current-time-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-end">
+            <p id="current-time" class="text-light"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero section -->
+    <section id="home" class="hero-section">
+      <!-- Carousel -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/slider1.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/slider2.gif" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/slider3.gif" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- End Carousel -->
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="display-4">Welcome to FashionAja Store</h1>
+        <p class="lead">
+          Discover the latest fashion trends and express your style with our
+          exclusive collection.
+        </p>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="about-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Emang Bisa Gratis Ongkir di FashionAja ?</h2>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Info Gratis Ongkir
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Bisa Banget dengan membayar lewat ovo anda dapat menggunakan
+                    voucher gratis ongkir dan dapat diskon lohh, buruan checkout
+                    sekarang .
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img src="assets/about.jpg" alt="About Us" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produk section -->
+    <section id="products" class="products-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Kamu Mungkin Suka Ini</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card shadow">
+              <img src="assets/adidas1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">ADIDAS</h5>
+                <p class="card-text">handball spezial shoes</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow">
+              <img src="assets/adidas2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">ADIDAS</h5>
+                <p class="card-text">sl 72 rs shoes</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow">
+              <img src="assets/adidas3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">gazelle indoor shoes</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="contact-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-info">
+              <h5>Address:</h5>
+              <p>123 FashionAja, Bantul</p>
+              <h5>Email:</h5>
+              <p>info@fashionAja.com</p>
+              <h5>Phone:</h5>
+              <p>+6287777</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>FashionAja Store</h5>
+            <p>
+              Discover the latest fashion trends and express your style with our
+              exclusive collection.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Links</h5>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Subscribe</h5>
+            <form>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <hr />
+            <p class="text-center">&copy; 2024 FashionAja Store.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS for Current Time -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Function to get current time
+        function getCurrentTime() {
+          const now = new Date();
+          const hours = String(now.getHours()).padStart(2, "0");
+          const minutes = String(now.getMinutes()).padStart(2, "0");
+          const seconds = String(now.getSeconds()).padStart(2, "0");
+          const currentTimeString = `${hours}:${minutes}:${seconds}`;
+
+          // Update the current time element
+          const currentTimeElement = document.getElementById("current-time");
+          if (currentTimeElement) {
+            currentTimeElement.innerText = currentTimeString;
+          }
+        }
+
+        // Call getCurrentTime initially
+        getCurrentTime();
+
+        // Update the current time every second
+        setInterval(getCurrentTime, 1000);
+      });
+    </script>
+  </body>
+</html>
